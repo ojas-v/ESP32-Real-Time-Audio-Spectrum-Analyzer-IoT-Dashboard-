@@ -3,7 +3,7 @@ import json
 import time
 
 # UPDATE THIS IP
-ESP_IP = "172.20.10.2"  
+ESP_IP = "172.X0.XX.2"  # Hidden for privacy reasons, update the IP you get from your ESP
 URL = f"ws://{ESP_IP}:81/"
 
 def on_message(ws, message):
