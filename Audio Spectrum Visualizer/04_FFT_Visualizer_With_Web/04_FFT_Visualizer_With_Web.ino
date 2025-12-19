@@ -4,7 +4,7 @@
 #include <FastLED.h>
 #include <arduinoFFT.h>
 
-// IMPORT THE DASHBOARD
+// IMPORTING THE DASHBOARD
 #include "web_interface.h" 
 
 // --- CONFIG ---
