@@ -31,7 +31,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 </head>
 <body>
 
-  <h2>🎵 Audio Visualizer</h2>
+  <h2> Audio Visualizer</h2>
   
   <div class="chart-container">
     <canvas id="spectrumChart"></canvas>
@@ -46,9 +46,9 @@ const char index_html[] PROGMEM = R"rawliteral(
     
     <label>Mode Select</label>
     <div class="btn-group">
-      <button onclick="send('M', 0)">🌈 Rainbow</button>
-      <button onclick="send('M', 1)">🔥 Fire</button>
-      <button onclick="send('M', 2)">💧 Matrix</button>
+      <button onclick="send('M', 0)"> Rainbow</button>
+      <button onclick="send('M', 1)"> Fire</button>
+      <button onclick="send('M', 2)"> Matrix</button>
     </div>
   </div>
 
