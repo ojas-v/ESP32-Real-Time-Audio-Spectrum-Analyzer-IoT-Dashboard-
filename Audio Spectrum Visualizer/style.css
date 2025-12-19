@@ -1,0 +1,10 @@
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+canvas {
+  max-width: 600px;
+  margin: auto;
+}
