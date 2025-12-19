@@ -15,7 +15,7 @@ CRGB leds[NUM_LEDS];
 double vReal[SAMPLES];
 double vImag[SAMPLES];
 
-// FIXED: Updated constructor for v2.0
+// Updated constructor for v2.0
 ArduinoFFT<double> FFT = ArduinoFFT<double>(vReal, vImag, SAMPLES, SAMPLING_FREQ);
 
 uint8_t spectrum[NUM_COLS];
@@ -24,7 +24,7 @@ uint8_t peak[NUM_COLS];
 unsigned long sampling_period_us;
 
 int XY(int x, int y) {
-  // Map x,y to Serpentine Layout
+  // Map x,y to Serpentine Layout of 8x8 matrix
   if (x % 2 == 0) return x * NUM_ROWS + y;
   else return x * NUM_ROWS + (NUM_ROWS - 1 - y);
 }
@@ -33,7 +33,7 @@ void setup() {
   Serial.begin(115200);
 
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.setBrightness(40); // Keep low for USB power
+  FastLED.setBrightness(40); // Keep this low for USB power
 
   sampling_period_us = round(1000000.0 / SAMPLING_FREQ);
 }
